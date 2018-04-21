@@ -9,7 +9,7 @@ import com.wudashan.task.Task;
 public class Main {
 
     public static void main(String[] args) {
-        Task task = new DemoTask("Demo");
+        Task task = new DemoTask();
         task.execute();
     }
 

@@ -5,6 +5,10 @@ package com.wudashan.task;
  */
 public class DemoTask extends BaseTask<String> {
 
+    public DemoTask() {
+        super("Demo");
+    }
+
     public DemoTask(String s) {
         super(s);
     }

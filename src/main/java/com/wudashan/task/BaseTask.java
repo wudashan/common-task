@@ -52,8 +52,8 @@ public abstract class BaseTask<T> implements Task {
     }
 
     /**
-     * 执行任务前方法
-     * 通常执行一个任务前需要先做一些准备，如加载资源，获取锁等等操作。
+     * 执行任务前方法，通常执行一个任务前需要先做一些准备，如加载资源，获取锁等等操作
+     * 默认空实现，由子类决定是否覆盖实现
      */
     protected void preExecute(T t) {}
 
@@ -63,9 +63,8 @@ public abstract class BaseTask<T> implements Task {
     protected abstract void doExecute(T t);
 
     /**
-     * 执行任务后方法
-     * 通常执行完一个任务后需要做一些善后工作，如释放资源，释放锁等等操作。
-     *
+     * 执行任务后方法，通常执行完一个任务后需要做一些善后工作，如释放资源，释放锁等等操作
+     * 默认空实现，由子类决定是否覆盖实现
      */
     protected void postExecute(T t) {}
 
